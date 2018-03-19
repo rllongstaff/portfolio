@@ -1,0 +1,99 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        border: 2px solid $color-secondary-light;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        font-weight: 700;
+        border-radius: 5rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);     
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);     
+    }
+    
+    &--white {
+        background-color: rgba($color-white, .5);      
+    }
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }    
+}
+
+.btn-small {
+
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+    &:link,
+    &:visited {
+        text-decoration: none;
+        padding: .5rem 2rem;
+        display: inline-block;
+        border-radius: 1rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+        color: $color-white;
+
+        @include respond(tablet-portrait) {
+            font-size: 2rem;
+        }          
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);  
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);    
+    }
+
+    &--demo {
+        border: 1px solid $color-demo-green; 
+
+        &:hover,
+        &:focus {
+            background-color: $color-demo-green;
+        }
+    }
+
+    &--mockup {
+        border: 1px solid $color-mockup-blue;
+
+        &:hover,
+        &:focus {
+            background-color: $color-mockup-blue;
+        }        
+    }    
+
+    &--github {
+        border: 1px solid $color-github-black;
+
+        &:hover,
+        &:focus {
+            background-color: $color-github-black;
+        }        
+    }
+
+}

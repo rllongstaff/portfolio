@@ -1,0 +1,62 @@
+.footer {
+    background-color: $color-grey-dark-3;
+    padding: 10rem 0;
+    font-size: 1.4em;
+    color: $color-grey-light-1; 
+
+    &__copyright {
+        text-align: center;
+    }
+
+    &__list {
+        text-align: center;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            color: $color-grey-light-1;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 4rem;
+
+            @include respond(tablet-portrait) {
+                font-size: 5rem;
+            }            
+        }
+
+        &--linkedin {
+
+            &:hover,
+            &:active,
+            &:focus {
+                outline: none;
+                color: $color-linkedin-blue;
+                background-color: $color-grey-light-1; 
+                margin:0;
+                padding: 0;               
+            }
+
+        }
+
+        &--github {
+
+            &:hover,
+            &:active,
+            &:focus {
+                outline: none;
+                color: $color-github-black;
+                background-color: $color-grey-light-1;
+            }
+        }
+    }
+}
