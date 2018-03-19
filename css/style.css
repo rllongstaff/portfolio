@@ -95,7 +95,7 @@ body {
         letter-spacing: .25rem;
         font-size: 3rem; } }
     .heading-primary--main__name {
-      color: pink; }
+      color: #ffb900; }
   .heading-primary--sub {
     display: block;
     font-size: 2.5rem;
@@ -193,10 +193,20 @@ body {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
+.btn-container {
+  width: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .btn-container {
+      text-align: center; } }
+
 .btn-small:not(:last-child) {
   margin-right: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .btn-small:not(:last-child) {
+      margin-bottom: 2rem; } }
 
 .btn-small:link, .btn-small:visited {
+  font-weight: 700;
   text-decoration: none;
   padding: .5rem 2rem;
   display: inline-block;
@@ -204,12 +214,17 @@ body {
   transition: all .2s;
   position: relative;
   font-size: 1.6rem;
-  color: #fff; }
+  color: #333; }
   @media only screen and (max-width: 56.25em) {
     .btn-small:link, .btn-small:visited {
-      font-size: 2rem; } }
+      font-size: 2rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%; } }
 
 .btn-small:hover {
+  color: #fff;
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
@@ -219,17 +234,17 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .btn-small--demo {
-  border: 1px solid #40bf28; }
+  border: 2px solid #40bf28; }
   .btn-small--demo:hover, .btn-small--demo:focus {
     background-color: #40bf28; }
 
 .btn-small--mockup {
-  border: 1px solid #14529e; }
+  border: 2px solid #14529e; }
   .btn-small--mockup:hover, .btn-small--mockup:focus {
     background-color: #14529e; }
 
 .btn-small--github {
-  border: 1px solid #24292e; }
+  border: 2px solid #24292e; }
   .btn-small--github:hover, .btn-small--github:focus {
     background-color: #24292e; }
 
@@ -277,6 +292,7 @@ body {
     color: #999; }
 
 .form__label {
+  color: #fff;
   font-size: 1.2rem;
   font-weight: 700;
   margin-left: 2rem;
