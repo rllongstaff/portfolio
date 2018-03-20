@@ -2,7 +2,9 @@
     &,
     &:link,
     &:visited {
+        background-color: transparent;
         border: 2px solid $color-secondary-light;
+        color: $color-secondary-light;
         text-decoration: none;
         padding: 1.5rem 4rem;
         display: inline-block;
@@ -13,7 +15,10 @@
         font-size: $default-font-size;
     }
     
-    &:hover {
+    &:hover,
+    &:focus {
+        background-color: $color-secondary-light;
+        color: $color-grey-dark-3;
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color-black,.2);     
     }
@@ -26,12 +31,11 @@
     }
     
     &--white {
-        background-color: rgba($color-white, .5);      
+       // background-color: rgba($color-white, .5);      
     }
     
     &--animated {
-        animation: moveInBottom .5s ease-out .75s;
-        animation-fill-mode: backwards;
+        animation: fadeIn 3s;
     }    
 }
 

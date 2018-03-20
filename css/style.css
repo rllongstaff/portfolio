@@ -40,13 +40,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
     opacity: 1;
     transform: translate(0); } }
 
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 *,
 *::after,
@@ -167,7 +165,9 @@ body {
   list-style: none !important; }
 
 .btn, .btn:link, .btn:visited {
+  background-color: transparent;
   border: 2px solid #ffb900;
+  color: #ffb900;
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
@@ -177,7 +177,9 @@ body {
   position: relative;
   font-size: 1.6rem; }
 
-.btn:hover {
+.btn:hover, .btn:focus {
+  background-color: #ffb900;
+  color: #333;
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
@@ -186,12 +188,8 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn--white {
-  background-color: rgba(255, 255, 255, 0.5); }
-
 .btn--animated {
-  animation: moveInBottom .5s ease-out .75s;
-  animation-fill-mode: backwards; }
+  animation: fadeIn 3s; }
 
 .btn-container {
   width: 100%; }
@@ -268,7 +266,7 @@ body {
   margin-bottom: 2rem; }
 
 .form__input {
-  color: inherit;
+  color: #333;
   font-family: inherit;
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
@@ -285,11 +283,11 @@ body {
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #2c87bb; }
+    border-bottom: 3px solid #40bf28; }
   .form__input:focus:invalid {
     border-bottom: 3px solid #ff7730; }
   .form__input::-webkit-input-placeholder {
-    color: #999; }
+    color: #333; }
 
 .form__label {
   color: #fff;
@@ -306,7 +304,7 @@ body {
   transform: translateY(-4rem); }
 
 .form__textarea {
-  color: inherit;
+  color: #333;
   font-family: inherit;
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
@@ -320,11 +318,11 @@ body {
   .form__textarea:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #2c87bb; }
+    border-bottom: 3px solid #40bf28; }
   .form__textarea:focus:invalid {
     border-bottom: 3px solid #ff7730; }
   .form__textarea::-webkit-input-placeholder {
-    color: #999; }
+    color: #333; }
 
 .form__textarea:placeholder-shown + .form__label {
   opacity: 0;
@@ -385,9 +383,11 @@ body {
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
   .footer__link:link, .footer__link:visited {
+    border-radius: .3rem;
     color: #f7f7f7;
     text-decoration: none;
-    display: inline-block;
+    display: inline;
+    padding: 0 .5rem;
     font-size: 4rem; }
     @media only screen and (max-width: 56.25em) {
       .footer__link:link, .footer__link:visited {
@@ -395,9 +395,7 @@ body {
   .footer__link--linkedin:hover, .footer__link--linkedin:active, .footer__link--linkedin:focus {
     outline: none;
     color: #0073b1;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 0; }
+    background-color: #f7f7f7; }
   .footer__link--github:hover, .footer__link--github:active, .footer__link--github:focus {
     outline: none;
     color: #24292e;

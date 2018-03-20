@@ -5,7 +5,7 @@
     }
 
     &__input {
-        color: inherit;
+        color: $color-grey-dark-3;
         font-family: inherit;
         font-size: 1.5rem;
         padding: 1.5rem 2rem;
@@ -21,11 +21,10 @@
             width: 100%;
         }
 
-
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
-            border-bottom: 3px solid $color-primary;
+            border-bottom: 3px solid $color-demo-green;
         } 
         
         &:focus:invalid {
@@ -33,7 +32,7 @@
         }
 
         &::-webkit-input-placeholder {
-            color: $color-grey-dark-2;
+            color: $color-grey-dark-3;
         }        
     }
 
@@ -54,7 +53,7 @@
     }
 
     &__textarea {
-        color: inherit;
+        color: $color-grey-dark-3;
         font-family: inherit;
         font-size: 1.5rem;
         padding: 1.5rem 2rem;
@@ -69,7 +68,7 @@
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
-            border-bottom: 3px solid $color-primary;
+            border-bottom: 3px solid $color-demo-green;
         } 
         
         &:focus:invalid {
@@ -77,7 +76,7 @@
         }
 
         &::-webkit-input-placeholder {
-            color: $color-grey-dark-2;
+            color: $color-grey-dark-3;
         }         
     }
 
