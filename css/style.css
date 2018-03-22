@@ -134,6 +134,9 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.form-feedback {
+  color: #fff; }
+
 .u-center-text {
   text-align: center !important; }
 

@@ -175,9 +175,17 @@
             </div>
 
             <div class="row">
-                <div class="contact">
+                <div class="contact" id="contact">
                     <div clasws="contact__form">
-                        <form action="#" method="post" class="form">
+
+                    <?php
+                    $action=$_REQUEST['action'];
+                    if ($action=="")    /* display the contact form */
+                        {
+                        ?>
+
+                        <form action="#contact" method="POST" class="form" enctype="multipart/form-data">
+                            <input type="hidden" name="action" value="submit">
                             <div class="form__group">
                                 <input class="form__input" type="text" placeholder="Name" id="name" name="name" required>
                                 <label for="name" class="form__label">Name</label>
@@ -194,6 +202,26 @@
                                 <button class="btn btn--white">Submit</button>
                             </div>
                         </form>
+
+                        <?php
+                        } 
+                    else                /* send the submitted data */
+                        {
+                        $name=$_REQUEST['name'];
+                        $email=$_REQUEST['email'];
+                        $message=$_REQUEST['message'];
+                        if (($name=="")||($email=="")||($message==""))
+                            {
+                            echo "All fields are required, please fill <a href=\"\">the form</a> again.";
+                            }
+                        else{		
+                            $from="From: $name<$email>\r\nReturn-path: $email";
+                            $subject="Message sent using your contact form";
+                            mail("webtest@test.com", $subject, $message, $from);
+                            echo '<p class="paragraph form-feedback">Thank you! <br>Your email has been sent. <br>I will be in touch shortly.</p>';
+                            }
+                        }  
+                    ?>                        
                     </div>
                 </div>
             </div>
