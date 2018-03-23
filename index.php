@@ -42,8 +42,8 @@
                     <p class="paragraph">Over the last 12 years my focus has been on the front end with exposure
                         to some backend technologies. I have had some great opportunities working on big brand 
                         fashion ecommerce sites like Matalan, Burberry, Matches Fashion, Lyle &amp; Scott and many others. 
-                        My current drive is to move away from the digital marketing domain I currently occupy and move back into full web development,
-                        so I can progress my career further into more rewarding and fulfilling opportunities.</p>
+                        My current drive is to move away from the digital marketing domain I currently occupy and move back into full web development
+                        so I can progress my career further, into more rewarding and fulfilling opportunities.</p>
                 </div>
                 <div class="col-1-of-2">
                     <img class="feature-box__img" src="img/about-russ.jpg" alt="Image of Russell Longstaff">
@@ -68,6 +68,7 @@
                             <li>Angular</li>
                             <li>Node</li>
                             <li>PHP</li>
+                            <li>MySQL</li>
                             <li>JavaScript</li>
                             <li>jQuery</li>
                             <li>Sass</li>
@@ -89,7 +90,7 @@
                     <div class="feature-box">
                         <h3 class="heading-tertiary u-margin-bottom-small">Expert</h3>
                         <ul class="format-list-no-markers">
-                            <li>Me</li>
+                            <li>Not quite yet</li>
                         </ul>
                     </div>
                 </div>
@@ -115,7 +116,9 @@
                     </div>
                 </div>
                 <div class="col-1-of-2">
-                    <p class="paragraph">This was a project I started to allow users to make holiday booking requests. The plan was that I would teach myself Node, Express, Mongoose and incorporate Bootstrap for layout. Although basic and only the first iteration, you can create an account with any dummy email account, make a booking request of your own and see other users booking requests.</p>
+                    <p class="paragraph">A project I started to allow users to make holiday booking requests. <br>At the time I had recognised an opportunity to move away from paper-based documenting in my company. We had no available budget to invest in a system so I researched ways to improve the holiday booking process. This was the beginnings of that vision.</p>
+                    <p class="paragraph"><strong>The plan</strong> - teach myself the basics of Node, Express, Mongoose and incorporate Bootstrap for a responsive layout. Create a layer of authentication and save users data to a database so that requests could be made and viewed across multiple colleagues that used the system for bookings. It had to be clean, easy and intuitive.</p>
+                    <p class="paragraph">You can demo the app by using a random test email address. Once in, make a request and feel free to navigate other user requests by navigating the dropdown menu at the top.</p>
                     <div class="btn-container">
                         <a href="https://rlongstaff-booking-system.herokuapp.com/" class="btn-small btn-small--demo">View Demo</a>
                         <a href="https://gomockingbird.com/projects/27k5ur6/4gXVnC" class="btn-small btn-small--mockup">View Mockup</a>
@@ -137,7 +140,9 @@
                     </div>
                 </div>
                 <div class="col-1-of-2">
-                    <p class="paragraph">At the time my knowledge of JavaScript needed a serious brush up. After years of only using libraries like jQuery I wanted to see what I could do with pure vanilla JavaScript. I planned, designed, created the graphics and coded what you see here. Along the way I discovered that a lot of what I was doing was in serious need of improvement. The focus was more on the coding than the artwork and content. You can view the code on my GitHub account.</p>
+                    <p class="paragraph">An avid fan of video games, I wanted to try my own hand at creating one for myself. I knew I wasn't an artist and that it would be a huge undertaking, but I thought it would be a great opportunity to learn a bit more about JavaScript.</p>
+                    <p class="paragraph"><strong>The plan</strong>- teach myself the basics of vanilla JavaScript by using it to create a small point and click graphic adventure game. I would create my own basic art in Photoshop quickly so that I could focus more on the code involved to get this project running.</p>
+                    <p class="paragraph">You can demo the first couple of rooms currently as the rest is incomplete but this should give you an idea of where I was headed with this project. I realise the code is buggy and can be improved vastly to improve performance but every project starts somewhere... right? You can view the code on my GitHub account.</p>
                     <div class="btn-container">
                         <a href="https://rlongstaff-javascript-game.herokuapp.com/Text%20Based%20Adventure/index.html" class="btn-small btn-small--demo">View Demo</a>
                         <a href="https://github.com/rllongstaff/javascript-game" class="btn-small btn-small--github">View on GitHub</a>    
