@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -204,8 +205,12 @@
                                 <label for="your-message" class="form__label">Your message</label>
                             </div>
                             <div class="form__group">
+                                <div class="g-recaptcha" data-sitekey="6Lc4-VAUAAAAAIL6xYuiIitCEmOiblItvHOUZj1f"></div>  
+                            </div>
+                            <div class="form__group">
                                 <button class="btn btn--white">Submit</button>
                             </div>
+                           
                         </form>
 
                         <?php
@@ -222,7 +227,7 @@
                         else{		
                             $from="From: $name<$email>\r\nReturn-path: $email";
                             $subject="Message sent using your contact form";
-                            mail("webtest@test.com", $subject, $message, $from);
+                            mail("enquiry@russelllongstaff.com", $subject, $message, $from);
                             echo '<p class="paragraph form-feedback">Thank you! <br>Your email has been sent. <br>I will be in touch shortly.</p>';
                             }
                         }  
