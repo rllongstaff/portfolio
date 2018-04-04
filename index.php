@@ -25,7 +25,7 @@
                     I'm a web developer.
                 </span>
             </h1>
-            <a href="#projects" class="btn btn--animated">See my work</a>
+            <a href="#projects" class="btn btn--animated scroll_to">See my work</a>
         </div>
     </header>
 
