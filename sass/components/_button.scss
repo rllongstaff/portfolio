@@ -80,12 +80,15 @@
         box-shadow: 0 1rem 2rem rgba($color-black,.2);  
     }
 
+
+
     &:active,
     &:focus {
+        color: $color-white;
         outline: none;
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color-black,.2);    
-    }
+    }   
 
     &--demo {
         border: 2px solid $color-demo-green; 
