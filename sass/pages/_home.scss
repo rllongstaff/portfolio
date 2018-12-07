@@ -2,21 +2,13 @@
     background-color: $color-grey-light-1;
 }
 
-.section-skills {
-    background: linear-gradient(
-         rgba($color-primary-light, 0.2),
-         rgba($color-primary, 0.6),         
-         rgba($color-primary-light, 0.6)
-    );      
-}
-
 .section-personal-projects {
     background-image: linear-gradient(
         to right bottom,
          rgba($color-grey-light-1, 0.8),
          rgba($color-grey-light-2, 0.8)
-    ); 
-    background-size: cover;  
+    );  
+    background-size: cover;   
 }
 
 .section-contact {

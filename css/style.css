@@ -427,9 +427,6 @@ body {
 .section-about {
   background-color: #f7f7f7; }
 
-.section-skills {
-  background: linear-gradient(rgba(70, 164, 219, 0.2), rgba(44, 135, 187, 0.6), rgba(70, 164, 219, 0.6)); }
-
 .section-personal-projects {
   background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(238, 238, 238, 0.8));
   background-size: cover; }
