@@ -53,51 +53,22 @@
 
         </section>
 
-        <section class="section-skills section-padding-small">
-
+        <!-- <section class="section-work section-padding-small">
             <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">Skills</h2> 
+                <h2 class="heading-secondary">Work</h2>
             </div>
-
 
             <div class="row">
-                <div class="col-1-of-3">
-                    <div class="feature-box">
-                        <h3 class="heading-tertiary u-margin-bottom-small">Beginner</h3>
-                        <ul class="format-list-no-markers">
-                            <li>React</li>
-                            <li>Angular</li>
-                            <li>Node</li>
-                            <li>PHP</li>
-                            <li>MySQL</li>
-                            <li>JavaScript</li>
-                            <li>jQuery</li>
-                            <li>Sass</li>
-                            <li>Photoshop</li>
-                            <li>Wordpress</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-1-of-3">
-                    <div class="feature-box">
-                        <h3 class="heading-tertiary u-margin-bottom-small">Intermediate</h3>
-                        <ul class="format-list-no-markers">
-                            <li>CSS</li>
-                            <li>HTML</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-1-of-3">
-                    <div class="feature-box">
-                        <h3 class="heading-tertiary u-margin-bottom-small">Expert</h3>
-                        <ul class="format-list-no-markers">
-                            <li>Not quite yet</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="slider format-list-no-markers">
+                    <li class="slide">
+                        <img src="img/gregory-cusick-photography.jpg" alt="Gregory Cusicks Photograph site preview">
+                        <div class="caption">
+                            <p>Gregory Cusicks Photography</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-
-        </section>
+        </section> -->
 
         <section id="projects" class="section-personal-projects section-padding-small">
             <div class="u-center-text u-margin-bottom-big">
